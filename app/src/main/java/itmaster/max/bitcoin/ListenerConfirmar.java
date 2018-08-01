@@ -16,5 +16,6 @@ public class ListenerConfirmar implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         Intent activity2 = new Intent(context, Main2Activity.class );
+        context.startActivity(activity2);
     }
 }
