@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        et1 = findViewById(R.id.et1);
+
+        //Instanciado de objetos(atributos)
         et2 = findViewById(R.id.et2);
         et3 = findViewById(R.id.et3);
         confirmar = findViewById(R.id.confirmar);
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         listenerConfirmar = new ListenerConfirmar(this);
         listenerReset = new ListenerReset(this);
 
+        //evento click(escuchadores)
 confirmar.setOnClickListener(listenerConfirmar);
 reset.setOnClickListener(listenerReset);
     }
