@@ -4,17 +4,17 @@ import android.app.Activity;
 import android.view.View;
 
 public class ListenerReset implements View.OnClickListener {
-    MainActivity context;
+    MainActivity pcontext;
 
     public ListenerReset(MainActivity pcontext) {
-        this.context = pcontext;
+        this.pcontext = pcontext;
     }
 
     @Override
     public void onClick(View view) {
-        context.getEt1().setText("");
-        context.getEt2().setText("");
-        context.getEt3().setText("");
+        pcontext.getEt1().setText("");
+        pcontext.getEt2().setText("");
+        pcontext.getEt3().setText("");
 
     }
 }

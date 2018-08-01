@@ -37,5 +37,6 @@ public class MainActivity extends AppCompatActivity {
         listenerReset = new ListenerReset(this);
 
 confirmar.setOnClickListener(listenerConfirmar);
+reset.setOnClickListener(listenerReset);
     }
 }
